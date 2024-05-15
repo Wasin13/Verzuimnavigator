@@ -1,0 +1,51 @@
+.footer {
+    background-color: #143157; /* Transparent background */
+    color: white;
+    padding: 40px 0;
+    backdrop-filter: blur(10px); /* Backdrop blur effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background for glass effect */
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px); /* Increase the blur effect for better glassmorphism */
+  }
+  
+  .footer-column {
+    flex: 1;
+    margin: 0 20px;
+  }
+  
+  .footer-column h3 {
+    font-family: 'Montserrat-Medium', sans-serif;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-column ul {
+    list-style-type:disc;
+    padding: 0;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-column ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-column ul li a:hover {
+    color: #f5b741;
+  }
+  

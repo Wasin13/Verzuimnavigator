@@ -1,0 +1,89 @@
+.card-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    column-gap: 30px; /* Smaller horizontal gap between columns */
+    row-gap: 20px; /* Space between rows */
+    padding: 80px 120px; /* Larger padding around the grid */
+    background-color: #f9f9f9;
+  }
+  
+  .card {
+    background: var(--beige, #f4eeea); /* Background color */
+    border-radius: 12px; /* Border radius */
+    padding: 40px; /* Padding inside the cards */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to flex-start for vertical layout */
+    justify-content: space-between; /* Justify content space between */
+    position: relative; /* Position relative */
+    overflow: hidden; /* Hide overflow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 350px; /* Limit the card width */
+    height: auto; /* Allow the height to be auto */
+    margin: 0 auto; /* Center cards horizontally */
+  }
+  
+  .card h3 {
+    font-family: "Montserrat-Medium", sans-serif; /* Font family */
+    text-align: left;
+    font-size: 36px; /* Font size */
+    color: #000000;
+    margin:10px;
+  }
+  
+  .card p {
+    font-family: "Montserrat-Regular", sans-serif;
+    font-size: 18px; /* Font size */
+    font-weight: 400;
+    line-height: 165%;
+    color: #000000;
+    margin:20px;
+  }
+  
+ .card-button {
+  background: #f5b741;
+  border-radius: 52px;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center; /* Center the button content */
+  flex-shrink: 0;
+  height: auto;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  color: #222;
+  font-size: .9rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  align-self: center; /* Center the button in the card */
+}
+
+.card-button .icon-wrapper {
+  background: #000;
+  width: 44px;
+  height: 24px;
+  border-radius:30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-button .icon-wrapper i {
+  color: #fff;
+}
+
+.card-button:hover {
+  background-color: #007BFF;
+  color: white;
+}
+
+.card-button:hover .icon-wrapper {
+  background: #fff;
+}
+
+.card-button:hover .icon-wrapper i {
+  color: #007BFF;
+}
